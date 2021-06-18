@@ -1,37 +1,34 @@
 {
   "name": "indecision-app",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
+  "author": "Andrew Mead",
+  "license": "MIT",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "live-server public/",
-    "build": "webpack",
-    "dev-server": "webpack serve"
-  },
-  "author": "ravi",
-  "license": "ISC",
-  "devDependencies": {
-    "@babel/cli": "^7.13.16",
-    "@babel/core": "^7.14.2",
-    "@babel/plugin-proposal-class-properties": "^7.13.0",
-    "@babel/preset-env": "^7.14.1",
-    "@babel/preset-react": "^7.13.13",
-    "css-loader": "^5.2.4",
-    "style-loader": "^2.0.0",
-    "webpack-cli": "^4.7.0"
+    "build:dev": "webpack",
+    "build:prod": "webpack -p --env production",
+    "dev-server": "webpack-dev-server"
   },
   "dependencies": {
-    "babel-loader": "^8.2.2",
-    "live-server": "^1.2.1",
+    "babel-cli": "6.24.1",
+    "babel-core": "6.25.0",
+    "babel-loader": "7.1.1",
+    "babel-plugin-transform-class-properties": "6.24.1",
+    "babel-preset-env": "1.5.2",
+    "babel-preset-react": "6.24.1",
+    "css-loader": "0.28.4",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "live-server": "^1.2.0",
     "node-sass": "^6.0.0",
-    "normalize.css": "^8.0.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-modal": "^3.13.1",
-    "sass-loader": "^11.1.1",
-    "validator": "^13.6.0",
-    "webpack": "^5.37.0",
-    "webpack-dev-server": "^3.11.2"
+    "normalize.css": "7.0.0",
+    "react": "15.6.1",
+    "react-dom": "15.6.1",
+    "react-modal": "2.2.2",
+    "sass-loader": "6.0.6",
+    "style-loader": "0.18.2",
+    "validator": "8.0.0",
+    "webpack": "3.1.0",
+    "webpack-dev-server": "2.5.1"
   }
 }
